@@ -1,0 +1,41 @@
+.about {
+  background-color: #a8d0e6;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px 30px;
+  color: #24305e;
+  font-family: "Impact", sans-serif;
+  overflow: scroll;
+}
+
+p {
+  padding: 10px 0;
+  font-family: "Courier New", sans-serif;
+  font-weight: bolder;
+}
+
+li {
+  font-family: "Monaco", sans-serif;
+}
+
+#appLink {
+  background-color: #24305e;
+  color: #a8d0e6;
+  padding: 0 5px;
+  text-decoration: none;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
+  border-radius: 5px;
+}
+#appLink:hover {
+  background-color: #374785;
+  opacity: 0.5;
+}
+
+.about > div {
+  align-self: flex-end;
+}

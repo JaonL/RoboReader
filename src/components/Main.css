@@ -1,0 +1,83 @@
+.mainApp {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.responseList {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #a8d0e6;
+}
+
+.mainApp > input {
+  border-radius: 15px;
+  height: 30px;
+  width: 300px;
+  border: none;
+  padding: 0 20px 0 10px;
+  margin: 30px 10px;
+  font-size: 14px;
+  align-self: flex-end;
+}
+input:focus {
+  outline:none;
+}
+input:disabled {
+  background-color: #a3becc;
+}
+
+#toast {
+  position: absolute;
+  bottom: 50px;
+  background-color: #374785;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  position: absolute;
+  bottom: 33px;
+  right: 13px;
+  border: 11px solid #374785;
+  border-top: 11px solid #a3becc;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.send {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 37px;
+  right: 13px;
+  font-weight: 900;
+  color: #374785;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+}
+.send:hover {
+  color: #a3becc;
+}
