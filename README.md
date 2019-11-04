@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Current Issue:
+
+React-bootstrap Toast component's built in usage of react-transition-group is broken. Consider replacing
+
 ## Available Scripts
 
 In the project directory, you can run:
