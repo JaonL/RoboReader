@@ -39,7 +39,7 @@ class Main extends React.Component {
 
   sendRequest() {
     this.setState({loading: true, responses: [...this.state.responses, this.state.currentString],});
-    fetch("http://ml.workbor.de/",
+    fetch("https://ml.workbor.de/",
       {
         method: 'POST',
         headers: {
